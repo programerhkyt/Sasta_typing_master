@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="portfolioTitle">Typing Speed Test</h1>
+
+    <section id="playerInputSection">
+      <input type="text" id="playerName" placeholder="Enter your name" autocomplete="off" />
+      <button id="startTestBtn" disabled>Start Test</button>
+    </section>
+
+    <section id="testSection" style="display:none;">
+      <div id="quoteDisplay"></div>
+      <textarea id="quoteInput" placeholder="Start typing here..." rows="4" disabled></textarea>
+
+      <div class="stats">
+        <p>Time Left: <span id="timer">60</span> sec</p>
+        <p>WPM: <span id="wpm">0</span></p>
+        <p>Accuracy: <span id="accuracy">100</span>%</p>
+      </div>
+
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <section id="leaderboardSection">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboardList"><li>No scores yet.</li></ul>
+      <button id="clearLeaderboardBtn">Clear Leaderboard</button>
+    </section>
+
+    <label class="dark-mode-label">
+      Dark Mode
+      <input type="checkbox" id="darkModeToggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
